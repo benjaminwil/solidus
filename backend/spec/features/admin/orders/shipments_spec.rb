@@ -78,6 +78,10 @@ describe "Shipments", type: :feature do
       complete_split_to("LA(#{shipment2.number})")
       expect(page).to have_css("#shipment_#{shipment2.id} tr.stock-item", count: 2)
       expect(page).to have_css("#shipment_#{shipment1.id} tr.stock-item", count: 3)
+
+      within "#shipment_#{shipment2.id}" do
+        expect(page).to have_content("UPS Ground")
+      end
     end
 
     context "with a ready-to-ship order" do
