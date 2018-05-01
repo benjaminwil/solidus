@@ -51,12 +51,16 @@ systems:
   inches.
 - **Width**: The product's width. By default, Solidus measures width in inches.
 - **Depth**: The product's depth. By default, Solidus measures depth in inches.
-- **Shipping Categories**: This sets the product's shipping category.
-- **Tax Category**: This sets the products' tax category.
+- **Shipping Categories**: This sets the product's [shipping
+  category][shipping-categories].
+- **Tax Category**: This sets the product's tax category.
 
 Note that the weight and dimensions of a product can be used to calculate an
-order's shipment costs.
+order's shipment costs. For more information, see the [Shipments][shipments]
+documentation.
 
+[shipments]: ../shipments/overview.md
+[shipping-categories]: ../shipments/overview.md#shipping-categories
 [sku]: https://en.wikipedia.org/wiki/Stock_keeping_unit
 
 ## SEO information
