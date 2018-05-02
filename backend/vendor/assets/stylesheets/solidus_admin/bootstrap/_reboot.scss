@@ -409,13 +409,7 @@ fieldset {
 // 1. Correct the text wrapping in Edge and IE.
 // 2. Correct the color inheritance from `fieldset` elements in IE.
 legend {
-  display: block;
-  width: 100%;
   max-width: 100%; // 1
-  padding: 0;
-  margin-bottom: .5rem;
-  font-size: 1.5rem;
-  line-height: inherit;
   color: inherit; // 2
   white-space: normal; // 1
 }

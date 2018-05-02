@@ -151,58 +151,28 @@ span.info {
 }
 
 fieldset {
-  border: 1px solid $color-border;
-  position: relative;
-  margin-bottom: 35px;
-  padding: 10px 0 15px 0;
-  border-left: none;
-  border-right: none;
+  // i don't actually know if 16px is an acceptable number for any of this yet.
+  border: 1px dotted red; // just for testing. remove before PR. no borders for parent fieldsets.
+  margin: 16px 0;
 
-  &.no-border-bottom {
-    border-bottom: none;
-  }
-
-  &.no-margin-bottom {
-    margin-bottom: 0;
-  }
-
-  &.no-border-top {
-    border-top: none;
-    padding-top: 0;
+  button {
+    margin: 16px;
   }
 
   legend {
-    color: $color-2;
-    font-size: 16px;
-    font-weight: $font-weight-bold;
-    text-align: center;
-    padding: 8px 15px;
-    width: auto;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    i {
-      color: $link-color;
-    }
+    color: $headings-color;
+    font-size: $h4-font-size;
+    font-weight: $headings-font-weight;
+    padding: 16px;
   }
 
-  .filter-actions {
-    margin-bottom: -32px;
-    margin-top: 15px;
-    text-align: center;
+  fieldset {
+    border: 1px solid red; // use border, but shouldn't actually be red.
+    margin: inherit;
+    padding: 16px;
 
-    form {
-      display: inline-block;
-    }
-
-    button, .button, input[type="submit"], input[type="button"] {
-      box-shadow: 0 0 0 15px $body-bg;
-    }
-
-    // Always make sure the choices at the bottom of a fieldset are spaced out
-    > * + * {
-      margin-left: 2em;
+    legend {
+      font-size: $h5-font-size;
     }
   }
 }
