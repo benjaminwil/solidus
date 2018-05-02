@@ -168,8 +168,8 @@ fieldset {
 
   fieldset {
     border: 1px solid red; // use border, but shouldn't actually be red.
-    margin: inherit;
-    padding: 16px;
+    margin: 16px 0;
+    padding: 16px 0;
 
     legend {
       font-size: $h5-font-size;

@@ -1,4 +1,5 @@
-.breadcrumb {
-  font-size: 16px;
+ol.breadcrumb {
+  font-size: $h5-font-size;
   margin-bottom: 0;
+  padding: 0.75rem 0;
 }
