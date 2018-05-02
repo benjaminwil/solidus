@@ -1,0 +1,10 @@
+<% id_attr ||= "dimensions" %>
+
+<% [:height, :width, :depth, :weight].each_with_index do |field, index| %>
+  <div id="<%= id_attr %>_<%= field %>_field" class="col-6">
+    <div class="field col-12">
+      <%= f.label field %>
+      <%= f.text_field field, value: number_with_precision(@product.send(field), precision: 2) %>
+    </div>
+  </div>
+<% end %>
