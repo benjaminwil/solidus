@@ -25,11 +25,20 @@ gem 'solidus_auth_devise', '>= 2.1.0'
 gem 'rails-i18n'
 gem 'solidus_i18n'
 
-group :test, :development do
-  platforms :mri do
-    gem 'pry-byebug'
-  end
-end
+gem 'rspec'
+gem 'rspec-activemodel-mocks'
+gem 'rspec-rails'
+
+gem 'rails-controller-testing'
+gem 'with_model'
+gem 'database_cleaner'
+
+gem 'factory_bot'
+
+gem 'capybara'
+gem 'capybara-screenshot'
+gem 'selenium-webdriver'
+
 RUBY
 
 bundle install --gemfile Gemfile
@@ -37,6 +46,6 @@ bundle exec rake db:drop db:create
 bundle exec rails g spree:install --auto-accept --user_class=Spree::User --enforce_available_locales=true
 bundle exec rails g solidus:auth:install
 
-ln -s ../_test test
+ln -s ../spec spec
 
 cd ..
