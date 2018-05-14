@@ -1,0 +1,16 @@
+// Set image properties.
+seleniumFollowerImg.setAttribute('src', 'data:image/png;base64,'
+  + 'iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAtVJREFU'
+  + 'OBGdlT1oU1EUx1++v4wJElGpQ2ichEyFVHSTLIGgyVBBA0XBybW7ZHGqIIEsTil0aN3sUiHoKCVD'
+  + 'KA1iJjNIjDSFhCL05eV9XP//S27sqwWpB3499513z7nnnnPy6tH+Fg9MPkAtgDMD6uLihcslsOH1'
+  + 'evV4PL6H9Q3gB/8lYXgt+f1+czAYiHw+byDwG9iSgIddSHhFOj5JJBJTAWk2myKZTPZhy4AAuJAw'
+  + 'gxR4jAxt0zTFdDoVwWDQgq0wexeDJlEQBKw1/QgTcl1DNcCIRCJGp9PRAoGAlk6n7XA4vBGLxXrQ'
+  + 'n6B/4P0wGo3W4X8NXAE8hMHnAXkCC89rWcisv7u7ywO0xcXFQL1ev9put+MIlIM9sb+/H3Mc5xmy'
+  + '7xYKhZfYxsAh7lfCE4ro6iGcTtCIQTabtVnHtbU1YdtyKVZWVgRLQalWq87Ozo5IpVJH8L0HLqtg'
+  + 'zCyNRvS3t7dFr9cTCwsLFq7rqEAywjl/dF0XqDdrfB/EVcAIFndQG304HEq3VqslPB6PMxqNzgnj'
+  + 'Nvl8Phv+bBrnd94dzt/R5uamrFsul9MajYYHWXOPVi6XXRrN0QzDkDZkSE1/2WX1sITFW3TO5kCf'
+  + 'lVAoJCaTiTiruQ/BeeVHQNaQ3TUBC7uHgn+rVCoySzz/Uw4ODjSUhlc+Bi4/3j8HXiFLvVarOaez'
+  + 'LJVK8lFpZjoej0Umk7ER8CP87gIO+1xYCM7SA/AOo2NtbW25gp4+gOvV1VUHhx9i/wtwC7h+miwo'
+  + 'B5O/2afgA4Our6+7ghaLRWd5ednpdrsCY8WrvgacQXaP5XMJg3LAb4Pn4D0KPoFmbST8jSPQMbSJ'
+  + 'q36G/SG4DmSrof8ssKaTDr6rNTrbw/om4FgIy7L4fgx+gq/gy+yZnZYynx1lgGbqDMAvDz+u/KSx'
+  + 'PjxwCk7ALzCawUP4Tsp5AfmCdn49GIjXUfvUvwPWTzEPBpv2G3bynN1FmogjAAAAAElFTkSuQmCC');

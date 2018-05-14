@@ -8,17 +8,29 @@ Capybara.current_driver = :selenium_chrome
 Capybara.app_host = 'http://localhost:3000'
 Capybara.save_path = 'screenshots'
 
-def create_string(file)
-  data = String.new 
-  input= File.open(file) 
-  input.each_line do |line|
-    data += line
+
+# cursor input can be any of the following values: "default",
+# "default-inverted", "drag", "drag-inverted", "pointer", "pointer-inverted"
+class AnnotatedScreenshotTest
+  include Capybara::DSL
+  
+  def create_cursor(input)
+    beginning = File.open("cursor/begin.js")
+    cursor = File.open("cursor/cursor-#{input}.js")
+    ending = File.open("cursor/end.js")
+    output = String.new
+
+    [beginning, cursor, ending].each do |file|
+      file.each_line do |line|
+        output += line
+      end
+    end
+
+    execute_script(output) 
   end
-  return data
+  
+  def hover_on_link(text)
+    find('a', text: text).hover
+  end
+
 end
-
-def create_mouse_pointer
-  mouse_pointer = create_string("pointer.js")
-  execute_script(mouse_pointer)
-end 
-
