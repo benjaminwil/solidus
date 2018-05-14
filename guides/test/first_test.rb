@@ -1,17 +1,15 @@
 require_relative 'test_helper.rb'
 
-module MyCapybaraTest
-  class Test
-    include Capybara::DSL
-    def go(url)
-      visit url 
-      create_mouse_pointer
-      find('a', text: "Ruby on Rails Tote").hover
+module FirstTest
+  class Test < AnnotatedScreenshotTest
+    def test
+      visit "/" 
+      create_cursor "default"
+      hover_on_link "LOGIN"
       page.save_and_open_screenshot
     end
   end
 end
 
-test = MyCapybaraTest::Test.new
-test.go('/')
-
+current_test = FirstTest::Test.new
+current_test.test
