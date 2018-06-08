@@ -10,7 +10,7 @@
 #
 #    The helper also allows for CSS classes to be added:
 #
-#      <%= inline_svg("name/of/file.svg", class: "my-addl-class") %>
+#    <%= inline_svg("name/of/file.svg", class: "my-addl-class") %>
 #
 # /image_helpers.rb
 module ImageHelpers
