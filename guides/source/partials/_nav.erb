@@ -9,12 +9,14 @@
     </a>
   </div>
 
-  <%= partial 'partials/nav_content' %>
+  <div class="navbar-content">
+    <%= partial 'partials/nav_content' %>
 
-  <a class="btn btn-outline-secondary btn-w-icon btn-block slack"
-    href="http://slack.solidus.io/"
-    target="_blank">
-    <%= inline_svg("social-icons/slack.svg", class: "isvg") %>
-    <span class="text">Get Help on Slack</span>
-  </a>
+    <a class="btn btn-outline-secondary btn-w-icon btn-block slack"
+      href="http://slack.solidus.io/"
+      target="_blank">
+      <%= inline_svg("social-icons/slack.svg", class: "isvg") %>
+      <span class="text">Get Help on Slack</span>
+    </a>
+  </div>
 </div>
