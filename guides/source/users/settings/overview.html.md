@@ -4,7 +4,21 @@ Solidus's **Settings** section includes a number of pages that help you manage
 store-wide settings, including tax rates, shipping methods, and payment methods.
 
 This article introduces each settings page and how the settings affect your
-store. 
+store.
+
+## Stores
+
+The **Settings > Stores** page allows you to manage some of the global settings
+across all of your stores. These global settings include your site's name,
+site-wide SEO tag data, and the sender email address used when emails are sent
+by your store.
+
+If your Solidus application manages multiple stores, you can choose the store
+you want to edit from a list.
+
+For more information about these settings, see the [Stores][stores] article.
+
+[stores]: stores.html
 
 ## Zones
 
@@ -19,4 +33,4 @@ For more information on how to use zones, see the [Zones][zones] article.
 ## Taxes
 
 With Solidus, you can create tax rates and tax categories that correspond with
-each item in your store and each location that you ship to. 
+each item in your store and each location that you ship to.
