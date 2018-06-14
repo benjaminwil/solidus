@@ -15,10 +15,10 @@ The following settings are available for each for your stores:
 - **Meta Keywords**: A list of keywords that should be added to this product's
   metadata. These meta keywords are used by search engines.[^meta-keywords]
 - **Meta Description**: The summary text that accompanies your homepage in
-  search engine results.[^meta-descriptions]
+  search engine results.[^meta-descriptions] 
 - **Site URL**: The URL that customers use to access the current store.
 - **Mail From Address**: The email address that should be used to send emails to
-  customers and other users of your store.
+  customers and other users of your store. 
 - **Default Currency**: Optionally set the default currency that should be used
   throughout the current store. See the [Default currency](#default-currency)
   section before for more information.
