@@ -70,3 +70,8 @@ and/or tax. A country or state could exist in multiple zones or none at all.
 For more information on how to use zones, see the [Zones][zones] article.
 
 [zones]: zones.html
+
+## Taxes
+
+With Solidus, you can create tax rates and tax categories that correspond with
+each item in your store and each location that you ship to. 
