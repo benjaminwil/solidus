@@ -33,3 +33,4 @@ package-lock.json
 .env
 /admin/app/assets/builds
 /test-results
+.gem_path

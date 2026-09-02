@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+PROJECT_ROOT="$(dirname -- "$dir")"
+LOCAL_GEM_PATH="$PROJECT_ROOT/.gem_path"
+
+guix shell -m manifest.scm -- bash -c '
+  export GEM_HOME="'"${LOCAL_GEM_PATH}"'"
+  export GEM_PATH="'"${LOCAL_GEM_PATH}"'"
+  export LD_LIBRARY_PATH="$GUIX_ENVIRONMENT/lib"
+  export PATH="'"${LOCAL_GEM_PATH}"'/bin:$PATH"
+  exec bash
+'

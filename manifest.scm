@@ -1,0 +1,11 @@
+(specifications->manifest
+ '("gcc-toolchain"
+   "imagemagick"
+   "libyaml"
+   "make"
+   "node"
+   "ruby"
+   "sassc"
+   "sqlite"
+   "ungoogled-chromium-wayland"
+   "vips"))
