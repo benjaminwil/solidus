@@ -12,6 +12,8 @@ else
 end
 # rubocop:enable Bundler/DuplicatedGem
 
+gem "tzinfo-data"
+
 gem "debug"
 gem "launchy", require: false
 
