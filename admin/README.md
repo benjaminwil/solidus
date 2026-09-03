@@ -61,7 +61,7 @@ SolidusAdmin::Config.force_legacy_admin_proc = ->(req) {
 
 ### Authentication & Authorization
 
-- Solidus Amidn delegates authentication to `solidus_backend` and relies on `solidus_core` for authorization.
+- Solidus Admin delegates authentication to `solidus_backend` and relies on `solidus_core` for authorization.
 
 ## Development
 
