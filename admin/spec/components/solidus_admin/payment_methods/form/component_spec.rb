@@ -62,7 +62,6 @@ RSpec.describe SolidusAdmin::PaymentMethods::Form::Component, type: :component d
 
     let!(:store) { create :store, name: "Selectable Store" }
 
-
     it "gets all store name and IDs for a form <select>" do
       expect(subject).to eq [["Selectable Store", store.id]]
     end
