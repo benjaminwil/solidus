@@ -22,8 +22,35 @@ module SolidusAdmin
     def resources_sorting_options = {position: :asc}
 
     def permitted_resource_params
-      params.require(:payment_method).permit(:name, :description, :auto_capture, :type, :preference_source,
-        :preferred_server, :preferred_test_mode, :active, :available_to_admin, :available_to_users, store_ids: [])
+      params.require(:payment_method).permit(
+        *permitted_attribute_params,
+        *permitted_preference_params
+      )
+    end
+
+    def permitted_attribute_params
+      [
+        :name,
+        :description,
+        :auto_capture,
+        :type,
+        :active,
+        :available_to_admin,
+        :available_to_users,
+        :preference_source,
+        store_ids: []
+      ]
+    end
+
+    def permitted_preference_params
+      payment_method_type =
+        @resource&.class || params.dig(:payment_method, :type)&.constantize
+
+      return [] unless payment_method_type
+
+      payment_method_type
+        .allowed_admin_form_preference_types
+        .map { :"preferred_#{_1}" }
     end
 
     def initialize_resource
