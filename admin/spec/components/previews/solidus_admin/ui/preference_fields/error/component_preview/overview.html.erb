@@ -1,0 +1,16 @@
+<div class="mb-8">
+  <h6 class="text-gray-500 mb-3">
+    Default
+  </h6>
+
+  <%= form_for Spree::PaymentMethod::BogusCreditCard.new, url: "#" do |f| %>
+    <%= render current_component.new(
+      form: f,
+      klass: "Spree::PaymentMethod::BogusCreditCard",
+      preference_name: :bogus_decimal,
+      name: "field_name_for_rails_form",
+      preference_type: :registered_preference_without_component,
+      error: "Error message"
+    ) %>
+  <% end %>
+</div>
