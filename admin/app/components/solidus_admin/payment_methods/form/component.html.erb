@@ -9,7 +9,9 @@
            hint: t(".hints.auto_capture_html") %>
       <% end %>
 
-      <%= render component("payment_methods/form/deployment").new(form: f) %>
+      <% if deployable? %>
+        <%= render component("payment_methods/form/deployment").new(form: f) %>
+      <% end %>
     <% end %>
 
     <%= page_with_sidebar_aside do %>

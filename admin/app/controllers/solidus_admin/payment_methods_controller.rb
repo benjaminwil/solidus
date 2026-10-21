@@ -46,7 +46,7 @@ module SolidusAdmin
       payment_method_type =
         @resource&.class || params.dig(:payment_method, :type)&.constantize
 
-      return [] unless payment_method_type
+      return [] unless payment_method_type&.in?(available_types)
 
       payment_method_type
         .allowed_admin_form_preference_types
@@ -54,11 +54,14 @@ module SolidusAdmin
     end
 
     def initialize_resource
-      @resource = resource_class.new(stores: [Spree::Store.default])
+      @resource = resource_class.new(
+        type: available_types.first,
+        stores: [Spree::Store.default]
+      )
     end
 
     def available_types
-      Rails.application.config.spree.payment_methods.map(&:name)
+      Rails.application.config.spree.payment_methods.map(&:name).sort
     end
 
     def validate_type

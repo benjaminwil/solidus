@@ -66,7 +66,6 @@ class SolidusAdmin::PaymentMethods::Form::Deployment::Component < SolidusAdmin::
         @form.object.preference_source
       end
 
-    @type = params.dig(:payment_method, :type) || @form.object.type ||
-      Rails.application.config.spree.payment_methods.min_by(&:name).to_s
+    @type = params.dig(:payment_method, :type) || @form.object.type
   end
 end

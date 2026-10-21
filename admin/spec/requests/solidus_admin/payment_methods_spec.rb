@@ -21,7 +21,7 @@ RSpec.describe "SolidusAdmin::PaymentMethodsController", type: :request do
 
     describe "POST /create" do
       context "with an invalid type" do
-        let(:invalid_attributes) { {name: "Invalid Payment Method", type: "Spree::InvalidType"} }
+        let(:invalid_attributes) { {name: "Invalid Payment Method", type: "Spree::Order"} }
 
         it "does not create a payment method" do
           expect {
@@ -35,7 +35,7 @@ RSpec.describe "SolidusAdmin::PaymentMethodsController", type: :request do
 
     describe "PUT /update" do
       context "with an invalid type" do
-        let(:invalid_attributes) { {type: "Spree::InvalidType"} }
+        let(:invalid_attributes) { {type: "Spree::Order"} }
 
         it "does not update the payment method" do
           expect {
