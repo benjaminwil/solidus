@@ -29,7 +29,7 @@ Please see [Customizing tailwind](docs/tailwindcss.md) for more information.
 
 ### Components
 
-See [docs/contributing/components.md](docs/components.md) for more information about components.
+See [docs/components.md](docs/components.md) for more information about components.
 
 ### Using it alongside `solidus_backend`
 
