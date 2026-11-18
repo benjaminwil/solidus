@@ -8,6 +8,7 @@ guix shell -m manifest.scm -- bash -c '
   export GEM_HOME="'"${LOCAL_GEM_PATH}"'"
   export GEM_PATH="'"${LOCAL_GEM_PATH}"'"
   export LD_LIBRARY_PATH="$GUIX_ENVIRONMENT/lib"
+  export LLAMA_BASE_URL="http://llama.throning.local"
   export PATH="'"${LOCAL_GEM_PATH}"'/bin:$PATH"
   exec bash
 '
